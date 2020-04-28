@@ -1,0 +1,124 @@
+2020-04-26 22:04:12,825 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-26 22:04:23,829 ERROR: Exception on /edit_profile [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 89, in edit_profile
+    form=EditProfileForm(curret_user.username)
+NameError: name 'curret_user' is not defined
+2020-04-26 22:05:44,098 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 00:23:28,041 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 00:24:42,359 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 00:25:31,169 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 20:41:46,075 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 20:42:21,459 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 20:46:15,435 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 20:49:13,666 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 20:49:44,440 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 20:54:30,850 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 20:55:04,865 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 20:56:08,244 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 20:58:26,617 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 21:09:40,006 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 22:15:40,840 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 22:17:16,470 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 22:18:34,307 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 22:19:35,468 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 23:41:58,544 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 23:43:02,746 ERROR: Exception on /unfollow/susan [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 126, in unfollow
+    current_user.unfollow(user)
+  File "D:\WORK\flaskMicroBlog\flaskApp\models.py", line 58, in unfollow
+    if self.is_following(user):
+  File "D:\WORK\flaskMicroBlog\flaskApp\models.py", line 62, in is_following
+    return self.followed.filter(followers.c.followed_id==user.id).count() >0
+AttributeError: 'BaseQuery' object has no attribute 'id'
+2020-04-27 23:43:22,696 ERROR: Exception on /unfollow/susan [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 126, in unfollow
+    current_user.unfollow(user)
+  File "D:\WORK\flaskMicroBlog\flaskApp\models.py", line 58, in unfollow
+    if self.is_following(user):
+  File "D:\WORK\flaskMicroBlog\flaskApp\models.py", line 62, in is_following
+    return self.followed.filter(followers.c.followed_id==user.id).count() >0
+AttributeError: 'BaseQuery' object has no attribute 'id'
+2020-04-27 23:47:35,248 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-27 23:47:58,612 ERROR: Exception on /unfollow/susan [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 126, in unfollow
+    current_user.unfollow(user)
+  File "D:\WORK\flaskMicroBlog\flaskApp\models.py", line 58, in unfollow
+    if self.is_following(user):
+  File "D:\WORK\flaskMicroBlog\flaskApp\models.py", line 63, in is_following
+    followers.c.followed_id==user.id).count() >0
+AttributeError: 'BaseQuery' object has no attribute 'id'
+2020-04-28 00:05:39,112 ERROR: Exception on /unfollow/susan [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 126, in unfollow
+    current_user.unfollow(user)
+  File "D:\WORK\flaskMicroBlog\flaskApp\models.py", line 58, in unfollow
+    if self.is_following(user):
+  File "D:\WORK\flaskMicroBlog\flaskApp\models.py", line 63, in is_following
+    followers.c.followed_id==user.id).count() >0
+AttributeError: 'BaseQuery' object has no attribute 'id'
