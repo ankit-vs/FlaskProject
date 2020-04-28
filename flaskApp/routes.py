@@ -36,16 +36,6 @@ def index():
     else:
         print('post form unvalidated on submit')
     posts = current_user.followed_posts().all()
-    # posts = [
-    #     {
-    #         'author': {'username': 'John'},
-    #         'body': 'Beautiful day in Portland!'
-    #     },
-    #     {
-    #         'author': {'username': 'Susan'},
-    #         'body': 'The Avengers movie was so cool!'
-    #     }
-    # ]
     return render_template('index.html',title='Home Page',form=form,posts=posts)
 
 @app.route('/login' , methods=['GET','POST'])
