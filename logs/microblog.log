@@ -68,3 +68,5 @@ Traceback (most recent call last):
   File "D:\WORK\FlaskProject\flaskApp\templates\index.html", line 18, in block "content"
     {% for post in posts %}
 TypeError: 'Pagination' object is not iterable
+2020-04-28 23:15:14,113 INFO: Microblog startup [in D:\WORK\FlaskProject\flaskApp\__init__.py:56]
+2020-04-28 23:45:13,002 INFO: Microblog startup [in D:\WORK\FlaskProject\flaskApp\__init__.py:56]
