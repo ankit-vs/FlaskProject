@@ -1,103 +1,4 @@
-2020-04-28 00:59:48,138 ERROR: Exception on /unfollow/ankit [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
-Traceback (most recent call last):
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 127, in unfollow
-    print("calling unfollow function",user.id)
-AttributeError: 'BaseQuery' object has no attribute 'id'
-2020-04-28 01:09:36,218 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
-2020-04-28 03:01:07,682 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
-2020-04-28 03:01:10,839 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
-Traceback (most recent call last):
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 28, in index
-    form=PostForm()
-TypeError: PostForm() missing 1 required positional argument: 'FlaskForm'
-2020-04-28 03:05:15,156 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
-Traceback (most recent call last):
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 28, in index
-    form=PostForm()
-TypeError: PostForm() missing 1 required positional argument: 'FlaskForm'
-2020-04-28 03:06:25,446 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
-Traceback (most recent call last):
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 28, in index
-    form=PostForm()
-TypeError: PostForm() missing 1 required positional argument: 'FlaskForm'
-2020-04-28 03:07:05,106 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
-2020-04-28 03:07:07,866 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
-Traceback (most recent call last):
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
-    response = self.full_dispatch_request()
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
-    raise value
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "C:\Users\ankit\anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
-    return func(*args, **kwargs)
-  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 28, in index
-    form=PostForm()
-TypeError: PostForm() missing 1 required positional argument: 'FlaskForm'
-2020-04-28 03:11:44,887 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
-2020-04-28 03:11:47,633 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+2020-04-28 03:11:49,516 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -134,3 +35,80 @@ Traceback (most recent call last):
   File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 471, in getattr
     return getattr(obj, attribute)
 jinja2.exceptions.UndefinedError: 'flaskApp.forms.PostForm object' has no attribute 'hidden'
+2020-04-28 03:25:49,619 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-28 03:25:58,620 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 46, in index
+    return render_template('index.html',title='Home Page',form=form,posts=posts)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\WORK\flaskMicroBlog\flaskApp\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\WORK\flaskMicroBlog\flaskApp\templates\base.html", line 32, in top-level template code
+    {%block content%}{%endblock%}
+  File "D:\WORK\flaskMicroBlog\flaskApp\templates\index.html", line 6, in block "content"
+    {{ form.hidden.tag() }}
+  File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'flaskApp.forms.PostForm object' has no attribute 'hidden'
+2020-04-28 03:33:33,413 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-28 03:33:41,001 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+Traceback (most recent call last):
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 46, in index
+    return render_template('index.html',title='Home Page',form=form,posts=posts)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\templating.py", line 140, in render_template
+    ctx.app,
+  File "C:\Users\ankit\anaconda3\lib\site-packages\flask\templating.py", line 120, in _render
+    rv = template.render(context)
+  File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "D:\WORK\flaskMicroBlog\flaskApp\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\WORK\flaskMicroBlog\flaskApp\templates\base.html", line 32, in top-level template code
+    {%block content%}{%endblock%}
+  File "D:\WORK\flaskMicroBlog\flaskApp\templates\index.html", line 6, in block "content"
+    {{ form.hidden.tag() }}
+  File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 471, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'flaskApp.forms.PostForm object' has no attribute 'hidden'
+2020-04-28 03:55:11,889 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]

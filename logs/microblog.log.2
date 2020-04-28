@@ -1,4 +1,4 @@
-2020-04-28 03:11:49,516 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+2020-04-28 03:55:29,130 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -30,13 +30,13 @@ Traceback (most recent call last):
     {% extends "base.html" %}
   File "D:\WORK\flaskMicroBlog\flaskApp\templates\base.html", line 32, in top-level template code
     {%block content%}{%endblock%}
-  File "D:\WORK\flaskMicroBlog\flaskApp\templates\index.html", line 6, in block "content"
+  File "D:\WORK\flaskMicroBlog\flaskApp\templates\index.html", line 5, in block "content"
     {{ form.hidden.tag() }}
   File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 471, in getattr
     return getattr(obj, attribute)
 jinja2.exceptions.UndefinedError: 'flaskApp.forms.PostForm object' has no attribute 'hidden'
-2020-04-28 03:25:49,619 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
-2020-04-28 03:25:58,620 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+2020-04-28 04:04:01,653 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-28 04:04:22,853 ERROR: Exception on /explore [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -52,8 +52,8 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 46, in index
-    return render_template('index.html',title='Home Page',form=form,posts=posts)
+  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 150, in explore
+    return render_template('index.html', title='Explore', posts=posts)
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\templating.py", line 140, in render_template
     ctx.app,
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\templating.py", line 120, in _render
@@ -69,12 +69,11 @@ Traceback (most recent call last):
   File "D:\WORK\flaskMicroBlog\flaskApp\templates\base.html", line 32, in top-level template code
     {%block content%}{%endblock%}
   File "D:\WORK\flaskMicroBlog\flaskApp\templates\index.html", line 6, in block "content"
-    {{ form.hidden.tag() }}
+    {{ form.post.label }}<br>
   File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 471, in getattr
     return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: 'flaskApp.forms.PostForm object' has no attribute 'hidden'
-2020-04-28 03:33:33,413 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
-2020-04-28 03:33:41,001 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2020-04-28 04:04:26,537 ERROR: Exception on /explore [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -90,8 +89,8 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 46, in index
-    return render_template('index.html',title='Home Page',form=form,posts=posts)
+  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 150, in explore
+    return render_template('index.html', title='Explore', posts=posts)
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\templating.py", line 140, in render_template
     ctx.app,
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\templating.py", line 120, in _render
@@ -107,8 +106,8 @@ Traceback (most recent call last):
   File "D:\WORK\flaskMicroBlog\flaskApp\templates\base.html", line 32, in top-level template code
     {%block content%}{%endblock%}
   File "D:\WORK\flaskMicroBlog\flaskApp\templates\index.html", line 6, in block "content"
-    {{ form.hidden.tag() }}
+    {{ form.post.label }}<br>
   File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 471, in getattr
     return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: 'flaskApp.forms.PostForm object' has no attribute 'hidden'
-2020-04-28 03:55:11,889 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2020-04-28 04:08:02,411 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
