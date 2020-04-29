@@ -12,6 +12,8 @@ import os
 
 from flask_mail import Mail
 
+from flask_bootstrap import Bootstrap
+
 app=Flask(__name__)
 
 app.config.from_object(Config)
@@ -23,6 +25,8 @@ login = LoginManager(app)
 login.login_view='login'
 
 mail=Mail(app)
+
+bootstrap= Bootstrap(app)
 
 if not app.debug:
     if app.config['MAIL_SERVER']:
