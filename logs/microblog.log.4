@@ -1,4 +1,4 @@
-2020-04-28 03:11:49,516 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+2020-04-28 04:08:11,465 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -35,8 +35,7 @@ Traceback (most recent call last):
   File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 471, in getattr
     return getattr(obj, attribute)
 jinja2.exceptions.UndefinedError: 'flaskApp.forms.PostForm object' has no attribute 'hidden'
-2020-04-28 03:25:49,619 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
-2020-04-28 03:25:58,620 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+2020-04-28 04:08:16,439 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -73,8 +72,15 @@ Traceback (most recent call last):
   File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 471, in getattr
     return getattr(obj, attribute)
 jinja2.exceptions.UndefinedError: 'flaskApp.forms.PostForm object' has no attribute 'hidden'
-2020-04-28 03:33:33,413 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
-2020-04-28 03:33:41,001 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
+2020-04-28 04:08:32,630 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-28 04:11:50,913 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-28 04:15:08,147 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-28 04:16:56,152 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-28 04:20:39,980 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-28 04:22:21,765 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-28 04:26:15,980 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+2020-04-28 23:12:33,294 INFO: Microblog startup [in D:\WORK\FlaskProject\flaskApp\__init__.py:56]
+2020-04-28 23:13:19,372 ERROR: Exception on /index [GET] [in C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py:1892]
 Traceback (most recent call last):
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\app.py", line 2447, in wsgi_app
     response = self.full_dispatch_request()
@@ -90,7 +96,7 @@ Traceback (most recent call last):
     return self.view_functions[rule.endpoint](**req.view_args)
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
     return func(*args, **kwargs)
-  File "D:\WORK\flaskMicroBlog\flaskApp\routes.py", line 46, in index
+  File "D:\WORK\FlaskProject\flaskApp\routes.py", line 41, in index
     return render_template('index.html',title='Home Page',form=form,posts=posts)
   File "C:\Users\ankit\anaconda3\lib\site-packages\flask\templating.py", line 140, in render_template
     ctx.app,
@@ -102,13 +108,10 @@ Traceback (most recent call last):
     reraise(*rewrite_traceback_stack(source=source))
   File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\_compat.py", line 28, in reraise
     raise value.with_traceback(tb)
-  File "D:\WORK\flaskMicroBlog\flaskApp\templates\index.html", line 1, in top-level template code
+  File "D:\WORK\FlaskProject\flaskApp\templates\index.html", line 1, in top-level template code
     {% extends "base.html" %}
-  File "D:\WORK\flaskMicroBlog\flaskApp\templates\base.html", line 32, in top-level template code
+  File "D:\WORK\FlaskProject\flaskApp\templates\base.html", line 32, in top-level template code
     {%block content%}{%endblock%}
-  File "D:\WORK\flaskMicroBlog\flaskApp\templates\index.html", line 6, in block "content"
-    {{ form.hidden.tag() }}
-  File "C:\Users\ankit\anaconda3\lib\site-packages\jinja2\environment.py", line 471, in getattr
-    return getattr(obj, attribute)
-jinja2.exceptions.UndefinedError: 'flaskApp.forms.PostForm object' has no attribute 'hidden'
-2020-04-28 03:55:11,889 INFO: Microblog startup [in D:\WORK\flaskMicroBlog\flaskApp\__init__.py:56]
+  File "D:\WORK\FlaskProject\flaskApp\templates\index.html", line 18, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
